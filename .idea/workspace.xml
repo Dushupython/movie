@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79fe76d2-9fbf-4e5e-91df-a3667523d4fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/actors/360px-Amber_Heard_43723454772.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_movie/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actors/360px-Amber_Heard_43723454772.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_movie/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/urls.py" afterDir="false" />
     </list>
@@ -53,6 +56,14 @@
   <component name="FavoritesManager">
     <favorites_list name="movie" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -64,6 +75,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -75,6 +87,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\movie\templates\movies" />
+      <recent name="D:\movie\static" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="movie" type="Python.DjangoServer" factoryName="Django server">
@@ -114,7 +132,9 @@
       <workItem from="1588614042310" duration="4980000" />
       <workItem from="1588619149002" duration="998000" />
       <workItem from="1588626574768" duration="593000" />
-      <workItem from="1588627177840" duration="3029000" />
+      <workItem from="1588627177840" duration="5025000" />
+      <workItem from="1588673270734" duration="11102000" />
+      <workItem from="1588703618602" duration="1153000" />
     </task>
     <task id="LOCAL-00001" summary="models.py">
       <created>1588618308057</created>
@@ -130,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588628238764</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="media root">
+      <created>1588671182993</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1588671182993</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,25 +179,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="models.py" />
     <MESSAGE value="admin.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin.py" />
+    <MESSAGE value="media root" />
+    <option name="LAST_COMMIT_MESSAGE" value="media root" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="5" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588627204512">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="233" y="5" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588627204512" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1588628237878">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1588671181651">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1588628237878" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1588671181651" />
     <state x="297" y="2" key="DBNavigator.ProjectSettingsDialog" timestamp="1588627034614">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="297" y="2" key="DBNavigator.ProjectSettingsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588627034614" />
-    <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1588670432367">
+    <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1588703778173">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="421" y="88" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1588670432367" />
+    <state x="421" y="88" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1588703778173" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1588627165679">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
