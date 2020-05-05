@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79fe76d2-9fbf-4e5e-91df-a3667523d4fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actors/360px-Amber_Heard_43723454772.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_movie/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +67,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -115,7 +114,7 @@
       <workItem from="1588614042310" duration="4980000" />
       <workItem from="1588619149002" duration="998000" />
       <workItem from="1588626574768" duration="593000" />
-      <workItem from="1588627177840" duration="989000" />
+      <workItem from="1588627177840" duration="3029000" />
     </task>
     <task id="LOCAL-00001" summary="models.py">
       <created>1588618308057</created>
@@ -124,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588618308057</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="admin.py">
+      <created>1588628238764</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588628238764</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,25 +151,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="models.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="models.py" />
+    <MESSAGE value="admin.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="5" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588627204512">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="233" y="5" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588627204512" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1588618306715">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1588628237878">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1588618306715" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1588628237878" />
     <state x="297" y="2" key="DBNavigator.ProjectSettingsDialog" timestamp="1588627034614">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="297" y="2" key="DBNavigator.ProjectSettingsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588627034614" />
-    <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1588627029949">
+    <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1588670432367">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="421" y="88" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1588627029949" />
+    <state x="421" y="88" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1588670432367" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1588627165679">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
