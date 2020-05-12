@@ -73,6 +73,9 @@ class Movie(models.Model):
     def __str__(self):
         return self.title
 
+    def get_review(self):
+        return self.review_set.filter(parent__isnull=True)
+
     def get_absolute_url(self):
         return reverse("django_movie:movie_detail", kwargs={'slug': self.url})
 
@@ -124,7 +127,7 @@ class Review(models.Model):
     name = models.CharField("Имя", max_length=100)
     text = models.TextField("Отзыв", max_length=5000)
     parent = models.ForeignKey('self', verbose_name="Родитель", on_delete=models.SET_NULL, blank=True, null=True)
-    movie = models.ForeignKey(Movie, verbose_name="Фильм", on_delete=models.CASCADE)
+    movie = models.ForeignKey(Movie, verbose_name="Фильм", on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
         return f"{self.name} - {self.movie}"
