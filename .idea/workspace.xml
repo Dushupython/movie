@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79fe76d2-9fbf-4e5e-91df-a3667523d4fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/django_movie/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_movie/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_movie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_movie/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/movies/movie_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movies/movie_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_movie/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/admin.py" afterDir="false" />
     </list>
     <list id="f6d353a1-b7f6-4c47-95c4-11724122e05a" name="static files" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +148,8 @@
       <workItem from="1589139049482" duration="1949000" />
       <workItem from="1589211597994" duration="7362000" />
       <workItem from="1589220827390" duration="744000" />
-      <workItem from="1589278319885" duration="3732000" />
+      <workItem from="1589278319885" duration="9044000" />
+      <workItem from="1589313983145" duration="1865000" />
     </task>
     <task id="LOCAL-00001" summary="models.py">
       <created>1588618308057</created>
