@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="79fe76d2-9fbf-4e5e-91df-a3667523d4fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_movie/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_movie/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_movie/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/urls.py" afterDir="false" />
     </list>
     <list id="f6d353a1-b7f6-4c47-95c4-11724122e05a" name="static files" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +153,10 @@
       <workItem from="1589211597994" duration="7362000" />
       <workItem from="1589220827390" duration="744000" />
       <workItem from="1589278319885" duration="9044000" />
-      <workItem from="1589313983145" duration="1865000" />
+      <workItem from="1589313983145" duration="2005000" />
+      <workItem from="1589355510632" duration="2802000" />
+      <workItem from="1589526783035" duration="7537000" />
+      <workItem from="1589706598011" duration="6513000" />
     </task>
     <task id="LOCAL-00001" summary="models.py">
       <created>1588618308057</created>
@@ -172,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588671182993</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="customize admin.py">
+      <created>1589315951248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589315951248</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,25 +209,30 @@
     <MESSAGE value="models.py" />
     <MESSAGE value="admin.py" />
     <MESSAGE value="media root" />
-    <option name="LAST_COMMIT_MESSAGE" value="media root" />
+    <MESSAGE value="customize admin.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="customize admin.py" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="0" key="#admin" timestamp="1589526909717">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="361" y="0" key="#admin/0.0.1280.689@0.0.1280.689" timestamp="1589526909717" />
     <state x="233" y="5" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588627204512">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="233" y="5" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588627204512" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1588671181651">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1589315950214">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1588671181651" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589315950214" />
     <state x="297" y="2" key="DBNavigator.ProjectSettingsDialog" timestamp="1588627034614">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="297" y="2" key="DBNavigator.ProjectSettingsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588627034614" />
-    <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1589215050463">
+    <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1589399897379">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="421" y="88" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589215050463" />
+    <state x="421" y="88" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589399897379" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1588627165679">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -222,10 +241,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="490" y="262" key="VCS.ChangelistChooser/0.0.1280.689@0.0.1280.689" timestamp="1588705145629" />
-    <state x="233" y="68" key="Vcs.Push.Dialog.v2" timestamp="1588618317274">
+    <state x="233" y="68" key="Vcs.Push.Dialog.v2" timestamp="1589315958035">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="233" y="68" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1588618317274" />
+    <state x="233" y="68" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1589315958035" />
     <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1588626803557">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
