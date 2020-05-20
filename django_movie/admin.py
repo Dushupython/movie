@@ -54,6 +54,8 @@ class MovieAdmin(admin.ModelAdmin):
     list_filter = ['category', 'year']
     search_fields = ['title', 'category__name']
     inlines = [MovieShotsInLine, ReviewInLine]
+    list_editable = ("draft",)
+    actions = ['publish', 'unpublished']
     form = MovieAdminForm
     save_on_top = True
     save_as = True
@@ -69,6 +71,28 @@ class MovieAdmin(admin.ModelAdmin):
         return mark_safe(f'<img src={obj.poster.url} width="350" height="550">')
 
     get_poster.short_description = 'Постер'
+
+    def publish(self, request, queryset):
+        row_update = queryset.update(draft=False)
+        if row_update == 1:
+            message_bit = '1 запись обновлена'
+        else:
+            message_bit = f'{row_update} записей были  обновлены'
+        self.message_user(request, f'{message_bit}')
+
+    publish.short_description = 'Опубликовать'
+    publish.allowed_permissions = ('change',)
+
+    def unpublished(self, request, queryset):
+        row_update = queryset.update(draft=True)
+        if row_update == 1:
+            message_bit = '1 запись обновлена'
+        else:
+            message_bit = f'{row_update} записей были  обновлены'
+        self.message_user(request, f'{message_bit}')
+
+    unpublished.short_description = 'Снять с публикации'
+    unpublished.allowed_permissions = ('change',)
 
 
 @admin.register(Review)

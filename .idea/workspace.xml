@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79fe76d2-9fbf-4e5e-91df-a3667523d4fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/django_movie/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_movie/templatetags/movie_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/movies/tags/last_movies.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_movie/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_movie/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_movie/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movie/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/sidebar.html" afterDir="false" />
     </list>
     <list id="f6d353a1-b7f6-4c47-95c4-11724122e05a" name="static files" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,8 +67,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -157,6 +158,8 @@
       <workItem from="1589355510632" duration="2802000" />
       <workItem from="1589526783035" duration="7537000" />
       <workItem from="1589706598011" duration="6513000" />
+      <workItem from="1589801683776" duration="3725000" />
+      <workItem from="1589982447502" duration="4213000" />
     </task>
     <task id="LOCAL-00001" summary="models.py">
       <created>1588618308057</created>
