@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79fe76d2-9fbf-4e5e-91df-a3667523d4fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/django_movie/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/django_movie/templatetags/movie_tags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/movies/tags/last_movies.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/movies/actors.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_movie/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/include/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_movie/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_movie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_movie/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_movie/views.py" afterDir="false" />
     </list>
     <list id="f6d353a1-b7f6-4c47-95c4-11724122e05a" name="static files" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +85,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pyprojects/untitled2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -159,7 +157,8 @@
       <workItem from="1589526783035" duration="7537000" />
       <workItem from="1589706598011" duration="6513000" />
       <workItem from="1589801683776" duration="3725000" />
-      <workItem from="1589982447502" duration="4213000" />
+      <workItem from="1589982447502" duration="5469000" />
+      <workItem from="1590055235881" duration="4988000" />
     </task>
     <task id="LOCAL-00001" summary="models.py">
       <created>1588618308057</created>
@@ -189,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589315951248</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="template tags">
+      <created>1589990024732</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589990024732</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +219,8 @@
     <MESSAGE value="admin.py" />
     <MESSAGE value="media root" />
     <MESSAGE value="customize admin.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="customize admin.py" />
+    <MESSAGE value="template tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="template tags" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="0" key="#admin" timestamp="1589526909717">
@@ -224,18 +231,18 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="233" y="5" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588627204512" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1589315950214">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1589990023232">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589315950214" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.689@0.0.1280.689" timestamp="1589990023232" />
     <state x="297" y="2" key="DBNavigator.ProjectSettingsDialog" timestamp="1588627034614">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="297" y="2" key="DBNavigator.ProjectSettingsDialog/0.0.1280.689@0.0.1280.689" timestamp="1588627034614" />
-    <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1589399897379">
+    <state x="421" y="88" key="FileChooserDialogImpl" timestamp="1590060138005">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="421" y="88" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589399897379" />
+    <state x="421" y="88" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1590060138005" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1588627165679">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

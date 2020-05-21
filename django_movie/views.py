@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from django.views.generic import ListView, View
+from django.views.generic import ListView, View, DetailView
 from .forms import FormReview
-from django_movie.models import Movie
+from django_movie.models import Movie, Actors
 
 
 class MovieList(ListView):
@@ -30,4 +30,10 @@ class AddReview(View):
             form.movie = mov
             form.save()
         return redirect(mov.get_absolute_url())
+
+
+class ActorsView(DetailView):
+    model = Actors
+    template_name = 'movies/actors.html'
+    slug_field = "name"
 
