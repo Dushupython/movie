@@ -48,6 +48,11 @@ class MovieShotsInLine(admin.TabularInline):
     get_image.short_description = 'Изображение'
 
 
+@admin.register(Rating)
+class Rating(admin.ModelAdmin):
+    list_display = ("star", "movie", "ip")
+
+
 @admin.register(Movie)
 class MovieAdmin(admin.ModelAdmin):
     list_display = ('title', 'category', 'url', 'draft')
@@ -63,7 +68,23 @@ class MovieAdmin(admin.ModelAdmin):
     readonly_fields = ['get_poster']
     fieldsets = (
         (None, {
-            "fields": ('description', ('poster', 'get_poster'))
+            "fields": (("title", "tag_line"),)
+        }),
+        (None, {
+            "fields": ("description", ("poster", "get_poster"))
+        }),
+        (None, {
+            "fields": (("year", "world_premiere", "country"),)
+        }),
+        ("Actors", {
+            "classes": ("collapse",),
+            "fields": (("actors", "directors", "genre", "category"),)
+        }),
+        (None, {
+            "fields": (("budget", "fees_in_usa", "fees_in_world"),)
+        }),
+        ("Options", {
+            "fields": (("url", "draft"),)
         }),
     )
 
@@ -124,7 +145,6 @@ class AdminMovieShots(admin.ModelAdmin):
 
 
 admin.site.register(RatingStar)
-admin.site.register(Rating)
 admin.site.register(Genre)
 admin.site.site_title = 'Django Movies'
 admin.site.site_header = 'Django Movies'

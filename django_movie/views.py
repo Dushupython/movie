@@ -1,9 +1,13 @@
+from urllib import request
+
+from django.db.models import Q
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views.generic import ListView, View, DetailView
-from .forms import FormReview
-from django_movie.models import Movie, Actors, Genre
+from .forms import FormReview, RatingForm
+from django_movie.models import Movie, Actors, Genre, Rating
 
 
 class GenreYear:
@@ -24,7 +28,17 @@ class MoviesView(GenreYear, ListView):
 class MovieDetail(GenreYear, View):
     def get(self, request, slug):
         movie = Movie.objects.get(url=slug)
-        return render(request, "movies/movie_detail.html", {"movie": movie})
+        star_form = RatingForm()
+        context = {
+            "movie": movie,
+            'star_form': star_form
+        }
+        return render(request, "movies/movie_detail.html", context=context)
+
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     context['star_form'] = RatingForm()
+    #     return context
 
 
 class AddReview(View):
@@ -48,6 +62,46 @@ class ActorsView(GenreYear, DetailView):
 
 class FilterMoviesView(GenreYear, ListView):
     def get_queryset(self):
-        queryset = Movie.objects.filter(year__in=self.request.GET.getlist("year"))
+        queryset = Movie.objects.filter(Q(year__in=self.request.GET.getlist('year')) |
+                                        Q(genre__in=self.request.GET.getlist('genre'))
+                                        )
         return queryset
 
+    template_name = 'movies/movie_list.html'
+
+
+class AddStarRating(View):
+    def get_client_ip(self, request):
+        x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+        if x_forwarded_for:
+            ip = x_forwarded_for.split(',')[0]
+        else:
+            ip = request.META.get('REMOTE_ADDR')
+        return ip
+
+    def post(self):
+        form = RatingForm(request.POST)
+        if form.is_valid():
+            Rating.objects.update_or_create(
+                ip=self.get_client_ip(request),
+                movie_id=int(request.POST.get('movie')),
+                defaults={'star_id': request.POST.get('star')}
+
+            )
+            return HttpResponse(status=201)
+        else:
+            return HttpResponse(status=400)
+
+
+class JsonFilterMoviesView(ListView):
+    """Фильтр фильмов в json"""
+    def get_queryset(self):
+        queryset = Movie.objects.filter(
+            Q(year__in=self.request.GET.getlist("year")) |
+            Q(genre__in=self.request.GET.getlist("genre"))
+        ).distinct().values("title", "tag_line", "url", "poster")
+        return queryset
+
+    def get(self, request, *args, **kwargs):
+        queryset = list(self.get_queryset())
+        return JsonResponse({"movies": queryset}, safe=False)
